@@ -6,28 +6,23 @@ export function Menu() {
 
   if (isOpen) {
     return (
-      <>
-        <button className="menu-button" onClick={() => setIsOpen(false)}>
-          Menu
-        </button>
-        <nav className="navigation-bar">
-          <p>Menu Options</p>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/LearningSpace">Learning Space</Link>
-            </li>
-            <li>
-              <Link to="/MarsHoliday">Mars Holiday</Link>
-            </li>
-            <li>
-              <Link to="/MarsRoverPhotos">Mars Rover Photos</Link>
-            </li>
-          </ul>
-        </nav>
-      </>
+      <nav onClick={() => setIsOpen(false)}>
+        <button>Menu</button>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/learning-space">Learning Space</Link>
+          </li>
+          <li>
+            <Link to="/mars-holiday">Mars Holiday</Link>
+          </li>
+          <li>
+            <Link to="/images">Mars Rover Photos</Link>
+          </li>
+        </ul>
+      </nav>
     );
   } else {
     return (
