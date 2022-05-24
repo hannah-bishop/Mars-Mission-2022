@@ -5,10 +5,12 @@ import { Home } from "./components/Home";
 import { LearningSpace } from "./components/LearningSpace/LearningSpace";
 import { Images } from "./components/Images/Images";
 import { MarsHoliday } from "./components/MarsHoliday/MarsHoliday";
+import { Menu } from "./components/Menu/Menu";
 
 function App() {
   return (
     <Router>
+      <Menu />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/learning-space" element={<LearningSpace />} />
