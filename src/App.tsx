@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './App.scss'
+import "./App.scss";
 import { Home } from "./components/Home";
 import { LearningSpace } from "./components/LearningSpace/LearningSpace";
 import { Images } from "./components/Images/Images";
@@ -14,9 +14,9 @@ function App() {
         <Route path="/learning-space" element={<LearningSpace />} />
         <Route path="/images" element={<Images />} />
         <Route path="/mars-holiday" element={<MarsHoliday />} />
-    </Routes>
-  </Router>
-  )
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
