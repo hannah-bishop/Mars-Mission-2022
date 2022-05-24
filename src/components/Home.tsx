@@ -1,10 +1,14 @@
+import "./Home.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faRocket, faEarthAmericas, faUserAstronaut } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 export function Home() {
-    return <main>
-        <h1>Welcome to Mars Mission!</h1>
-        <p>Welcome, dear guest, to Mars Mission!</p>
-        <FontAwesomeIcon icon={faStar} size="6x" spin/>
+  return (
+    <main className="home">
+      <h1>Welcome to Mars Mission!</h1>
+      <p>Welcome, dear guest, to Mars Mission!</p>
+      <img src="https://www.solarsystemscope.com/spacepedia/images/handbook/renders/mars.png" />
+      <FontAwesomeIcon icon={faStar} size="6x" spin/>
     </main>
+  );
 }
