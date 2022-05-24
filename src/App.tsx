@@ -1,10 +1,14 @@
-import './App.scss'
+import "./App.scss";
 import { Home } from "./components/Home";
+import { Menu } from "./components/Menu/Menu";
 
 function App() {
   return (
-    <Home />
-  )
+    <>
+      <Menu />
+      <Home />
+    </>
+  );
 }
 
-export default App
+export default App;
