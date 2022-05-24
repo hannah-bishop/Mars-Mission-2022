@@ -1,6 +1,6 @@
 export function Home() {
     return <main>
         <h1>Welcome to Mars Mission!</h1>
-        <p>Welcome to Mars Mission!</p>
+        <p>Welcome, dear guest, to Mars Mission!</p>
     </main>
 }
