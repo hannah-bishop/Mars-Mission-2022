@@ -15,14 +15,12 @@ export function Home() {
       <img src="https://www.solarsystemscope.com/spacepedia/images/handbook/renders/mars.png" />
       <div className="navigation-grid">
         <Link to="/learning-space">
-          {" "}
           <div className="learning-space-tile">
             <FontAwesomeIcon icon={faUserAstronaut} />
             Learning Space
           </div>
         </Link>
         <Link to="/mars-holiday">
-          {" "}
           <div className="mars-holiday-tile">
             <FontAwesomeIcon icon={faRocket} />
             Mars Holiday
