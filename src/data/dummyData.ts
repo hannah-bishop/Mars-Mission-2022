@@ -1,4 +1,19 @@
-export const learningPageData = [
+export interface LearningPageData {
+  title: string;
+  content: {
+    imageUrl: string;
+    text: string;
+  };
+  questionSection: {
+    questionText: string;
+    answers: {
+      text: string;
+      isCorrect: boolean;
+    }[];
+  };
+}
+
+export const learningPageData: LearningPageData[] = [
   {
     title: "Section 1",
     content: {
@@ -6,7 +21,7 @@ export const learningPageData = [
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
     },
     questionSection: {
-      question: "Question 1",
+      questionText: "Question 1",
       answers: [
         {
           text: "a",
@@ -34,7 +49,7 @@ export const learningPageData = [
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
     },
     questionSection: {
-      question: "Question 2",
+      questionText: "Question 2",
       answers: [
         {
           text: "a",
@@ -62,7 +77,7 @@ export const learningPageData = [
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
     },
     questionSection: {
-      question: "Question 3",
+      questionText: "Question 3",
       answers: [
         {
           text: "a",
@@ -90,7 +105,7 @@ export const learningPageData = [
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
     },
     questionSection: {
-      question: "Question 4",
+      questionText: "Question 4",
       answers: [
         {
           text: "a",
@@ -118,7 +133,7 @@ export const learningPageData = [
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
     },
     questionSection: {
-      question: "Question 5",
+      questionText: "Question 5",
       answers: [
         {
           text: "a",
@@ -141,15 +156,33 @@ export const learningPageData = [
   },
 ];
 
-export const marsHolidayData = {
+export interface MarsHolidayData {
   defaultOptions: {
-    weatherData: { temp: 20, description: "Cloudy" },
+    weatherData: {
+      tempInDegreesCelsius: number;
+      description: string;
+    };
+    durationOfFlightInMinutes: number;
+    cost: string;
+  };
+  questions: {
+    questionText: string;
+    answers: {
+      text: string;
+      isCorrect: boolean;
+    }[];
+  }[];
+}
+
+export const marsHolidayData: MarsHolidayData = {
+  defaultOptions: {
+    weatherData: { tempInDegreesCelsius: 20, description: "Cloudy" },
     durationOfFlightInMinutes: 900,
-    costInPounds: "£100,000",
+    cost: "£100,000",
   },
-  questionSection: [
+  questions: [
     {
-      question: "Question 1",
+      questionText: "Question 1",
       answers: [
         {
           text: "a",
@@ -170,7 +203,7 @@ export const marsHolidayData = {
       ],
     },
     {
-      question: "Question 2",
+      questionText: "Question 2",
       answers: [
         {
           text: "a",
@@ -191,7 +224,7 @@ export const marsHolidayData = {
       ],
     },
     {
-      question: "Question 3",
+      questionText: "Question 3",
       answers: [
         {
           text: "a",
@@ -212,7 +245,7 @@ export const marsHolidayData = {
       ],
     },
     {
-      question: "Question 4",
+      questionText: "Question 4",
       answers: [
         {
           text: "a",
@@ -233,7 +266,7 @@ export const marsHolidayData = {
       ],
     },
     {
-      question: "Question 5",
+      questionText: "Question 5",
       answers: [
         {
           text: "a",
