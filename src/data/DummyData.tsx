@@ -7,8 +7,24 @@ export const learningPageData = [
     },
     questionSection: {
       question: "Question 1",
-      multipleChoices: ["a", "b", "c", "d"],
-      correctAnswer: "a",
+      answers: [
+        {
+          text: "a",
+          isCorrect: true,
+        },
+        {
+          text: "b",
+          isCorrect: false,
+        },
+        {
+          text: "c",
+          isCorrect: false,
+        },
+        {
+          text: "d",
+          isCorrect: false,
+        },
+      ],
     },
   },
   {
@@ -19,8 +35,24 @@ export const learningPageData = [
     },
     questionSection: {
       question: "Question 2",
-      multipleChoices: ["a", "b", "c", "d"],
-      correctAnswer: "b",
+      answers: [
+        {
+          text: "a",
+          isCorrect: false,
+        },
+        {
+          text: "b",
+          isCorrect: true,
+        },
+        {
+          text: "c",
+          isCorrect: false,
+        },
+        {
+          text: "d",
+          isCorrect: false,
+        },
+      ],
     },
   },
   {
@@ -31,8 +63,24 @@ export const learningPageData = [
     },
     questionSection: {
       question: "Question 3",
-      multipleChoices: ["a", "b", "c", "d"],
-      correctAnswer: "c",
+      answers: [
+        {
+          text: "a",
+          isCorrect: false,
+        },
+        {
+          text: "b",
+          isCorrect: false,
+        },
+        {
+          text: "c",
+          isCorrect: true,
+        },
+        {
+          text: "d",
+          isCorrect: false,
+        },
+      ],
     },
   },
   {
@@ -43,8 +91,24 @@ export const learningPageData = [
     },
     questionSection: {
       question: "Question 4",
-      multipleChoices: ["a", "b", "c", "d"],
-      correctAnswer: "d",
+      answers: [
+        {
+          text: "a",
+          isCorrect: false,
+        },
+        {
+          text: "b",
+          isCorrect: false,
+        },
+        {
+          text: "c",
+          isCorrect: false,
+        },
+        {
+          text: "d",
+          isCorrect: true,
+        },
+      ],
     },
   },
   {
@@ -55,8 +119,24 @@ export const learningPageData = [
     },
     questionSection: {
       question: "Question 5",
-      multipleChoices: ["a", "b", "c", "d"],
-      correctAnswer: "a",
+      answers: [
+        {
+          text: "a",
+          isCorrect: true,
+        },
+        {
+          text: "b",
+          isCorrect: false,
+        },
+        {
+          text: "c",
+          isCorrect: false,
+        },
+        {
+          text: "d",
+          isCorrect: false,
+        },
+      ],
     },
   },
 ];
@@ -70,23 +150,108 @@ export const marsHolidayData = {
   questionSection: [
     {
       question: "Question 1",
-      multipleChoices: ["a", "b", "c", "d"],
+      answers: [
+        {
+          text: "a",
+          isCorrect: true,
+        },
+        {
+          text: "b",
+          isCorrect: true,
+        },
+        {
+          text: "c",
+          isCorrect: true,
+        },
+        {
+          text: "d",
+          isCorrect: true,
+        },
+      ],
     },
     {
       question: "Question 2",
-      multipleChoices: ["a", "b", "c", "d"],
+      answers: [
+        {
+          text: "a",
+          isCorrect: true,
+        },
+        {
+          text: "b",
+          isCorrect: true,
+        },
+        {
+          text: "c",
+          isCorrect: true,
+        },
+        {
+          text: "d",
+          isCorrect: true,
+        },
+      ],
     },
     {
       question: "Question 3",
-      multipleChoices: ["a", "b", "c", "d"],
+      answers: [
+        {
+          text: "a",
+          isCorrect: true,
+        },
+        {
+          text: "b",
+          isCorrect: true,
+        },
+        {
+          text: "c",
+          isCorrect: true,
+        },
+        {
+          text: "d",
+          isCorrect: true,
+        },
+      ],
     },
     {
       question: "Question 4",
-      multipleChoices: ["a", "b", "c", "d"],
+      answers: [
+        {
+          text: "a",
+          isCorrect: true,
+        },
+        {
+          text: "b",
+          isCorrect: true,
+        },
+        {
+          text: "c",
+          isCorrect: true,
+        },
+        {
+          text: "d",
+          isCorrect: true,
+        },
+      ],
     },
     {
       question: "Question 5",
-      multipleChoices: ["a", "b", "c", "d"],
+      answers: [
+        {
+          text: "a",
+          isCorrect: true,
+        },
+        {
+          text: "b",
+          isCorrect: true,
+        },
+        {
+          text: "c",
+          isCorrect: true,
+        },
+        {
+          text: "d",
+          isCorrect: true,
+        },
+      ],
     },
   ],
 };
