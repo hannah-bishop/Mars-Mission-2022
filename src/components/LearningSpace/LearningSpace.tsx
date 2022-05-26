@@ -1,4 +1,4 @@
-import { QuestionSection } from "../../data/dummyData";
+import { QuestionSection } from "../../data/data";
 import { Question } from "../Question/Question";
 
 const questionSection: QuestionSection = {
