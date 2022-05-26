@@ -16,50 +16,56 @@ export function Menu() {
   return (
     <nav className="dropdown-menu">
       {isOpen ? (
-        <div onClick={() => setIsOpen(false)} className="menu-screen">
-          <FontAwesomeIcon icon={faBars} className="menu-button" size="2x" />
+        <div onClick={() => setIsOpen(false)} className="dropdown-menu__screen">
+          <FontAwesomeIcon
+            icon={faBars}
+            className="dropdown-menu__button"
+            size="2x"
+          />
           <ul>
-            <Link to="/" className="menu-link">
-              <li className="menu-list-item">
+            <Link to="/" className="dropdown-menu__link">
+              <li className="dropdown-menu__list-item">
                 <FontAwesomeIcon
                   icon={faEarthAmericas}
                   size="3x"
-                  className="menu-icon"
+                  className="dropdown-menu__icon"
                 />
-                <div className="menu-link-text">Home</div>
+                <div className="dropdown-menu__link-text">Home</div>
               </li>
             </Link>
 
-            <Link to="/learning-space" className="menu-link">
-              <li className="menu-list-item">
+            <Link to="/learning-space" className="dropdown-menu__link">
+              <li className="dropdown-menu__list-item">
                 <FontAwesomeIcon
                   icon={faUserAstronaut}
                   size="3x"
-                  className="menu-icon"
+                  className="dropdown-menu__icon"
                 />
-                <div className="menu-link-text">Learning Space</div>
+                <div className="dropdown-menu__link-text">Learning Space</div>
               </li>
             </Link>
 
-            <Link to="/mars-holiday" className="menu-link">
-              <li className="menu-list-item">
+            <Link to="/mars-holiday" className="dropdown-menu__link">
+              <li className="dropdown-menu__list-item">
                 <FontAwesomeIcon
                   icon={faRocket}
                   size="3x"
-                  className="menu-icon"
+                  className="dropdown-menu__icon"
                 />
-                <div className="menu-link-text">Mars Holiday</div>
+                <div className="dropdown-menu__link-text">Mars Holiday</div>
               </li>
             </Link>
 
-            <Link to="/images" className="menu-link">
-              <li className="menu-list-item">
+            <Link to="/images" className="dropdown-menu__link">
+              <li className="dropdown-menu__list-item">
                 <FontAwesomeIcon
                   icon={faStar}
                   size="3x"
-                  className="menu-icon"
+                  className="dropdown-menu__icon"
                 />
-                <div className="menu-link-text">Mars Rover Photos</div>
+                <div className="dropdown-menu__link-text">
+                  Mars Rover Photos
+                </div>
               </li>
             </Link>
           </ul>
@@ -67,7 +73,7 @@ export function Menu() {
       ) : (
         <FontAwesomeIcon
           icon={faBars}
-          className="menu-button"
+          className="dropdown-menu__button"
           onClick={() => setIsOpen(true)}
           size="2x"
         />
