@@ -5,6 +5,8 @@ import { PreviousAndNextButtons } from "../PreviousAndNextButtons/PreviousAndNex
 
 export function LearningSpace() {
   const [currentSection, setCurrentSection] = useState(0);
+  const [isAnswered, setIsAnswered] = useState(false);
+
   return (
     <>
       <h1>Welcome to a Learning Space!</h1>
@@ -12,11 +14,15 @@ export function LearningSpace() {
       <img src={learningPageData[currentSection].content.imageUrl} />
       <p>{learningPageData[currentSection].content.text}</p>
       <Question
+        isAnswered={isAnswered}
+        setIsAnswered={setIsAnswered}
         section={learningPageData[currentSection].questionSection}
         onAnswerChosen={console.log}
       />
 
       <PreviousAndNextButtons
+        isAnswered={isAnswered}
+        setIsAnswered={setIsAnswered}
         currentSection={currentSection}
         setCurrentSection={setCurrentSection}
         lengthOfArray={learningPageData.length - 1}

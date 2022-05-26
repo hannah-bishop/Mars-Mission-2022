@@ -5,12 +5,15 @@ import "./Question.scss";
 interface QuestionProps {
   section: QuestionSection;
   onAnswerChosen: (arg0: Answer) => void;
+  isAnswered: boolean;
+  setIsAnswered: (arg0: boolean) => void;
 }
 
 export function Question(props: QuestionProps) {
   const question = props.section.questionText;
   const answers = props.section.answers;
-  const [isAnswered, setIsAnswered] = useState(false);
+  const isAnswered = props.isAnswered;
+  const setIsAnswered = props.setIsAnswered;
   const [chosenAnswer, setChosenAnswer] = useState<Answer>();
   return (
     <div>
