@@ -1,9 +1,8 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.scss";
 import { Home } from "./components/Home";
 import { LearningSpace } from "./components/LearningSpace/LearningSpace";
-import { Images } from "./components/Images/Images";
+import { ImageViewer } from "./components/Images/ImageViewer";
 import { MarsHoliday } from "./components/MarsHoliday/MarsHoliday";
 import { Menu } from "./components/Menu/Menu";
 
@@ -14,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/learning-space" element={<LearningSpace />} />
-        <Route path="/images" element={<Images />} />
+        <Route path="/images" element={<ImageViewer />} />
         <Route path="/mars-holiday" element={<MarsHoliday />} />
       </Routes>
     </Router>
