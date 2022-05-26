@@ -19,10 +19,11 @@ export interface LearningPageData {
 
 export const learningPageData: LearningPageData[] = [
   {
-    title: "Section 1",
+    title: "Mars' Moons",
     content: {
-      imageUrl: "https://picsum.photos/200/300",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1447433589675-4aaa569f3e05?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880",
+      text: "Asaph Hall was about to give up his frustrating search for a Martian moon one August night in 1877, but his wife Angelina urged him on. He discovered Deimos the next night, and Phobos six nights after that. Ninety-four years later, NASA's Mariner 9 spacecraft got a much better look at the two moons from its orbit around Mars. The dominant feature on Phobos, it found, was a crater six miles (10 kilometers) wide—nearly half the width of the moon itself. It was given Angelina's maiden name: Stickney.",
     },
     questionSection: {
       questionText: "How many moons does Mars have?",
@@ -47,10 +48,11 @@ export const learningPageData: LearningPageData[] = [
     },
   },
   {
-    title: "Section 2",
+    title: "Mars Days",
     content: {
-      imageUrl: "https://picsum.photos/200/300",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470",
+      text: "The Earth zips around the Sun at about 67,000 miles per hour, making a full revolution in about 365 days - one year on Earth. Mars is a little slower, and farther from the sun, so a full circuit takes 687 Earth days - or one Mars year. This makes a day on Mars slightly LONGER than on earth.",
     },
     questionSection: {
       questionText: "How long does a day last on Mars?",
@@ -75,10 +77,11 @@ export const learningPageData: LearningPageData[] = [
     },
   },
   {
-    title: "Section 3",
+    title: "Mars Rover",
     content: {
-      imageUrl: "https://picsum.photos/200/300",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1639782792143-d8ce97e5d330?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332",
+      text: "As of May 2021, there have been six successful robotically operated Mars rovers; the first five, managed by the American NASA Jet Propulsion Laboratory, were (by date of Mars landing): Sojourner (1997), Opportunity (2004), Spirit (2004), Curiosity (2012), and Perseverance (2021)",
     },
     questionSection: {
       questionText: "When did the first Mars Rover arrive on Mars?",
@@ -103,13 +106,14 @@ export const learningPageData: LearningPageData[] = [
     },
   },
   {
-    title: "Section 4",
+    title: "Mars' Atmosphere",
     content: {
-      imageUrl: "https://picsum.photos/200/300",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1538551868183-edf7bfc50391?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470",
+      text: "Over the course of three Mars years an instrument in the portable chemistry lab inside the belly of NASA's Curiosity rover inhaled the air of Gale Crater and analyzed its composition. The results confirmed the makeup of the Martian atmosphere at the surface: 95% by volume of carbon dioxide (CO2), 2.6% molecular nitrogen (N2), 1.9% argon (Ar), 0.16% molecular oxygen (O2), and 0.06% carbon monoxide (CO). ",
     },
     questionSection: {
-      questionText: "How much of Mars’ atmosphere is carbon dioxide?",
+      questionText: "How much of Mars' atmosphere is carbon dioxide?",
       answers: [
         {
           text: "0.04%",
@@ -131,13 +135,14 @@ export const learningPageData: LearningPageData[] = [
     },
   },
   {
-    title: "Section 5",
+    title: "Mars Distance",
     content: {
-      imageUrl: "https://picsum.photos/200/300",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
+      imageUrl:
+        "https://images.pexels.com/photos/5259414/pexels-photo-5259414.jpeg",
+      text: "In theory, the closest Mars and Earth would get  is when Mars reaches its closest point to the sun and Earth is at its farthest. This would bring the two planets within 33.9 million miles of each other. Mars and Earth are farthest apart when they are both on opposite sides of the sun. Here, they can be 250 million miles apart. The average distance between Earth and Mars is 140 million miles (225 million km). ",
     },
     questionSection: {
-      questionText: "How far away is Mars from Earth?",
+      questionText: "What is the average distance from Mars to Earth?",
       answers: [
         {
           text: "120 million miles",
@@ -180,106 +185,86 @@ export const marsHolidayData: MarsHolidayData = {
   },
   questions: [
     {
-      questionText: "Question 1",
+      questionText: "How many people will be coming on your trip?",
       answers: [
         {
-          text: "a",
+          text: "1",
           isCorrect: true,
         },
         {
-          text: "b",
+          text: "2",
           isCorrect: true,
         },
         {
-          text: "c",
+          text: "3",
           isCorrect: true,
         },
         {
-          text: "d",
+          text: "4",
           isCorrect: true,
         },
       ],
     },
     {
-      questionText: "Question 2",
+      questionText: "Which snack would you like for your journey?",
       answers: [
         {
-          text: "a",
+          text: "Freeze-dried Ice-cream Sandwiches",
           isCorrect: true,
         },
         {
-          text: "b",
+          text: "Freeze-dried Banana Split",
           isCorrect: true,
         },
         {
-          text: "c",
+          text: "Freeze-dried Cinnamon Apples",
           isCorrect: true,
         },
         {
-          text: "d",
+          text: "Freeze-dried Bananas",
           isCorrect: true,
         },
       ],
     },
     {
-      questionText: "Question 3",
+      questionText: "Which rocket would you like to take on your journey?",
       answers: [
         {
-          text: "a",
+          text: "Atlas V",
           isCorrect: true,
         },
         {
-          text: "b",
+          text: "Falcon 9",
           isCorrect: true,
         },
         {
-          text: "c",
+          text: "Saturn V",
           isCorrect: true,
         },
         {
-          text: "d",
+          text: "Long March 5",
           isCorrect: true,
         },
       ],
     },
     {
-      questionText: "Question 4",
+      questionText:
+        "What time of year would you like to go? Remember a Mars year is 687 days!",
       answers: [
         {
-          text: "a",
+          text: "Winter (-125 °C)",
           isCorrect: true,
         },
         {
-          text: "b",
+          text: "Summer (20 °C)",
           isCorrect: true,
         },
         {
-          text: "c",
+          text: "Spring (-63 °C)",
           isCorrect: true,
         },
         {
-          text: "d",
-          isCorrect: true,
-        },
-      ],
-    },
-    {
-      questionText: "Question 5",
-      answers: [
-        {
-          text: "a",
-          isCorrect: true,
-        },
-        {
-          text: "b",
-          isCorrect: true,
-        },
-        {
-          text: "c",
-          isCorrect: true,
-        },
-        {
-          text: "d",
+          text: "Autumn (-62 °C)",
           isCorrect: true,
         },
       ],
