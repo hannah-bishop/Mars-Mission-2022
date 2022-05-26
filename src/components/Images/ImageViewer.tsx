@@ -3,8 +3,8 @@ import { ImageThumbnail } from "./ImageThumbnail";
 import "./ImageViewer.scss";
 
 export function ImageViewer() {
-  const [selectedImage, setSelectedImage] = useState();
-  const [urls, setUrls] = useState([]);
+  const [selectedImage, setSelectedImage] = useState<string>();
+  const [urls, setUrls] = useState<string[]>([]);
   useEffect(() => {
     fetch(
       "https://api.nasa.gov/mars-photos/api/v1/rovers/perseverance/photos?earth_date=2021-02-19&api_key=IgINDcTiL7hEVwnUDaK28gqY58yA3XIfQZfNhH8l"
@@ -23,12 +23,12 @@ export function ImageViewer() {
   }, []);
   return (
     <div className="image-viewer">
-      <h1 className="header">Images of the Mars Perseverance Rover</h1>
+      <div className="header">Images of the Mars Perseverance Rover</div>
       <img src={selectedImage} className="hero-image" />
       <ImageThumbnail
         urls={urls}
         selectedImage={selectedImage}
-        onClickImage={(url: any) => setSelectedImage(url)}
+        onClickImage={(url: string) => setSelectedImage(url)}
       />
     </div>
   );
