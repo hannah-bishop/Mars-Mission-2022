@@ -1,3 +1,15 @@
+.dropdown-menu {
+    background-color: #1C3148;
+}
+
+.menu-button {
+    color:#D04A36;
+    margin: 8px;
+    position:fixed;
+    top:0;
+    right:0;
+}
+
 .menu-screen {
     background-color: #1C3148;
     height: 100vh;
@@ -10,15 +22,26 @@
     }
 }
 
-.menu-link {
+.menu-link-text {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     font-size: 36px;
+    padding: 30px 0 30px 0px;
+}
+
+.menu-link {
+    text-decoration: none;
 }
 
 .menu-list-item {
-    margin: 50px 0 50px 0;
+    margin: 40px 0 35px 0;
     border: 3px solid #D04A36;
-    padding: 20px 30px 20px 80px;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+}
+
+.menu-icon {
+    color: #D04A36;
+    padding: 35px 40px 25px 20px;
 }
