@@ -1,16 +1,20 @@
+export interface Answer {
+  text: string;
+  isCorrect: boolean;
+}
+
+export interface QuestionSection {
+  questionText: string;
+  answers: Answer[];
+}
+
 export interface LearningPageData {
   title: string;
   content: {
     imageUrl: string;
     text: string;
   };
-  questionSection: {
-    questionText: string;
-    answers: {
-      text: string;
-      isCorrect: boolean;
-    }[];
-  };
+  questionSection: QuestionSection;
 }
 
 export const learningPageData: LearningPageData[] = [
@@ -165,13 +169,7 @@ export interface MarsHolidayData {
     durationOfFlightInMinutes: number;
     cost: string;
   };
-  questions: {
-    questionText: string;
-    answers: {
-      text: string;
-      isCorrect: boolean;
-    }[];
-  }[];
+  questions: QuestionSection[];
 }
 
 export const marsHolidayData: MarsHolidayData = {
