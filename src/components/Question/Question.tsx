@@ -1,4 +1,4 @@
-import { QuestionSection, Answer } from "../../data/dummyData";
+import { QuestionSection, Answer } from "../../data/data";
 import { useState } from "react";
 import "./Question.scss";
 
