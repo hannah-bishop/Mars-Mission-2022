@@ -1,5 +1,7 @@
+import { QuestionSection } from "../../data/dummyData";
 import { Question } from "../Question/Question";
-const questionSection = {
+
+const questionSection: QuestionSection = {
   questionText: "Question 1",
   answers: [
     {
@@ -24,7 +26,7 @@ export function LearningSpace() {
   return (
     <>
       <h1>Welcome to a Learning Space!</h1>
-      <Question questionSection={questionSection}/>
+      <Question section={questionSection} onAnswerChosen={console.log} />
     </>
   );
 }
