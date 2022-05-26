@@ -1,32 +1,17 @@
-import { QuestionSection } from "../../data/data";
 import { Question } from "../Question/Question";
+import { learningPageData } from "../../data/data";
 
-const questionSection: QuestionSection = {
-  questionText: "Question 1",
-  answers: [
-    {
-      text: "a",
-      isCorrect: true,
-    },
-    {
-      text: "b",
-      isCorrect: false,
-    },
-    {
-      text: "c",
-      isCorrect: false,
-    },
-    {
-      text: "d",
-      isCorrect: false,
-    },
-  ],
-};
 export function LearningSpace() {
   return (
     <>
       <h1>Welcome to a Learning Space!</h1>
-      <Question section={questionSection} onAnswerChosen={console.log} />
+      <h2>{learningPageData[0].title}</h2>
+      <img src={learningPageData[0].content.imageUrl} />
+      <p>{learningPageData[0].content.text}</p>
+      <Question
+        section={learningPageData[0].questionSection}
+        onAnswerChosen={console.log}
+      />
     </>
   );
 }
