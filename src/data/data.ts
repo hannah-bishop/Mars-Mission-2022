@@ -25,22 +25,22 @@ export const learningPageData: LearningPageData[] = [
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
     },
     questionSection: {
-      questionText: "Question 1",
+      questionText: "How many moons does Mars have?",
       answers: [
         {
-          text: "a",
+          text: "0",
+          isCorrect: false,
+        },
+        {
+          text: "1",
+          isCorrect: false,
+        },
+        {
+          text: "2",
           isCorrect: true,
         },
         {
-          text: "b",
-          isCorrect: false,
-        },
-        {
-          text: "c",
-          isCorrect: false,
-        },
-        {
-          text: "d",
+          text: "5",
           isCorrect: false,
         },
       ],
@@ -53,23 +53,23 @@ export const learningPageData: LearningPageData[] = [
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
     },
     questionSection: {
-      questionText: "Question 2",
+      questionText: "How long does a day last on Mars?",
       answers: [
         {
-          text: "a",
+          text: "10 hours and 5 minutes",
           isCorrect: false,
         },
         {
-          text: "b",
+          text: "15 hours and 15 minutes",
+          isCorrect: false,
+        },
+        {
+          text: "19 hours and 47 minutes",
+          isCorrect: false,
+        },
+        {
+          text: "24 hours and 37 minutes",
           isCorrect: true,
-        },
-        {
-          text: "c",
-          isCorrect: false,
-        },
-        {
-          text: "d",
-          isCorrect: false,
         },
       ],
     },
@@ -81,23 +81,23 @@ export const learningPageData: LearningPageData[] = [
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
     },
     questionSection: {
-      questionText: "Question 3",
+      questionText: "When did the first Mars Rover arrive on Mars?",
       answers: [
         {
-          text: "a",
+          text: "December 10th 1972",
           isCorrect: false,
         },
         {
-          text: "b",
+          text: "March 4th 1979",
           isCorrect: false,
         },
         {
-          text: "c",
+          text: "May 25th 1982",
+          isCorrect: false,
+        },
+        {
+          text: "July 4th 1997 ",
           isCorrect: true,
-        },
-        {
-          text: "d",
-          isCorrect: false,
         },
       ],
     },
@@ -109,23 +109,23 @@ export const learningPageData: LearningPageData[] = [
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
     },
     questionSection: {
-      questionText: "Question 4",
+      questionText: "How much of Mars’ atmosphere is carbon dioxide?",
       answers: [
         {
-          text: "a",
+          text: "0.04%",
           isCorrect: false,
         },
         {
-          text: "b",
+          text: "37.1%",
           isCorrect: false,
         },
         {
-          text: "c",
-          isCorrect: false,
-        },
-        {
-          text: "d",
+          text: "95.9%",
           isCorrect: true,
+        },
+        {
+          text: "99.9%",
+          isCorrect: false,
         },
       ],
     },
@@ -137,22 +137,22 @@ export const learningPageData: LearningPageData[] = [
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Est ultricies integer quis auctor. Laoreet id donec ultrices tincidunt arcu. Vel facilisis volutpat est velit egestas dui id.",
     },
     questionSection: {
-      questionText: "Question 5",
+      questionText: "How far away is Mars from Earth?",
       answers: [
         {
-          text: "a",
+          text: "120 million miles",
+          isCorrect: false,
+        },
+        {
+          text: "141 million miles ",
           isCorrect: true,
         },
         {
-          text: "b",
+          text: "302 million miles",
           isCorrect: false,
         },
         {
-          text: "c",
-          isCorrect: false,
-        },
-        {
-          text: "d",
+          text: "367 million miles",
           isCorrect: false,
         },
       ],
