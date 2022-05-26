@@ -1,0 +1,19 @@
+.thumb-sizes {
+    width: 200px;
+    padding: 0;
+  }
+  
+  .thumb-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 900px;
+    justify-content: center;
+    margin-left: 300px;
+  }
+  
+  .selected {
+    outline: 3px solid #d04a36;
+    outline-offset: -3px;
+  }
+  
