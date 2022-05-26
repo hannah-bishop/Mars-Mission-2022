@@ -1,0 +1,15 @@
+.menu-screen {
+    background-color: #1C3148;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    ul {
+        list-style-type: none;
+    }
+}
+
+.menu-list-item {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
