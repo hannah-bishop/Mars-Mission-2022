@@ -2,7 +2,7 @@ import React from "react";
 interface PreviousAndNextprops {
   currentSection: number;
   setCurrentSection: (arg0: number) => void;
-  lengthOfArray: number;
+  lastPageIndex: number;
   isAnswered: boolean;
   setIsAnswered: (arg0: boolean) => void;
 }
@@ -10,7 +10,7 @@ interface PreviousAndNextprops {
 export function PreviousAndNextButtons(props: PreviousAndNextprops) {
   const currentSection = props.currentSection;
   const setCurrentSection = props.setCurrentSection;
-  const lengthOfArray = props.lengthOfArray;
+  const lastPageIndex = props.lastPageIndex;
   const setIsAnswered = props.setIsAnswered;
 
   return (
@@ -26,7 +26,7 @@ export function PreviousAndNextButtons(props: PreviousAndNextprops) {
         </button>
       ) : null}
 
-      {currentSection !== lengthOfArray ? (
+      {currentSection !== lastPageIndex ? (
         <button
           onClick={() => {
             setCurrentSection(currentSection + 1);

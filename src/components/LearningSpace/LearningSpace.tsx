@@ -25,7 +25,7 @@ export function LearningSpace() {
         setIsAnswered={setIsAnswered}
         currentSection={currentSection}
         setCurrentSection={setCurrentSection}
-        lengthOfArray={learningPageData.length - 1}
+        lastPageIndex={learningPageData.length - 1}
       />
     </>
   );
