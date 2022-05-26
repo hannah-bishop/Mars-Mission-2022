@@ -13,18 +13,28 @@ export function Menu() {
         <div onClick={() => setIsOpen(false)}  className="menu-screen">
           <button>Menu</button>
           <ul>
-            <li className="menu-list-item">
-              <Link to="/"  className="menu-link"><FontAwesomeIcon icon={faEarthAmericas} size="lg"/> Home</Link>
-            </li>
-            <li className="menu-list-item">
-              <Link to="/learning-space"  className="menu-link"><FontAwesomeIcon icon={faUserAstronaut} size="lg"/> Learning Space</Link>
-            </li>
-            <li className="menu-list-item">
-              <Link to="/mars-holiday"  className="menu-link"><FontAwesomeIcon icon={faRocket} size="lg"/> Mars Holiday</Link>
-            </li>
-            <li className="menu-list-item">
-              <Link to="/images"  className="menu-link"><FontAwesomeIcon icon={faStar} size="lg"/> Mars Rover Photos</Link>
-            </li>
+            <Link to="/">
+              <li className="menu-list-item">
+                <p className="menu-link"><FontAwesomeIcon icon={faEarthAmericas} size="lg"/> Home</p>
+              </li>
+            </Link>
+
+            <Link to="/learning-space">
+              <li className="menu-list-item">
+                <p className="menu-link"><FontAwesomeIcon icon={faUserAstronaut} size="lg"/> Learning Space</p>
+              </li>
+            </Link>
+            <Link to="/mars-holiday">
+              <li className="menu-list-item">
+                <p className="menu-link"><FontAwesomeIcon icon={faRocket} size="lg"/> Mars Holiday</p>
+              </li>
+            </Link>
+            <Link to="/images">
+              <li className="menu-list-item">
+                <p className="menu-link"><FontAwesomeIcon icon={faStar} size="lg"/> Mars Rover Photos</p>
+              </li>
+            </Link>
+
           </ul>
         </div>
       ) : (
