@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { ImagesUrls } from "./ImagesUrls";
+import { ImageThumbnail } from "./ImageThumbnail";
 import "./ImageViewer.scss";
 
-export function ImageViewer(props: any) {
+export function ImageViewer() {
   const [selectedImage, setSelectedImage] = useState();
   const [urls, setUrls] = useState([]);
   useEffect(() => {
@@ -17,15 +17,19 @@ export function ImageViewer(props: any) {
           urlList.push(photos[i].img_src);
         }
         setUrls(urlList);
-        setSelectedImage(urlList[0])
+        setSelectedImage(urlList[0]);
       })
       .catch((error) => console.log(error));
   }, []);
   return (
-    <div className="imageViewer">
+    <div className="image-viewer">
       <h1 className="header">Images of the Mars Perseverance Rover</h1>
-      <img src={selectedImage} className="hero-image"/>
-      <ImagesUrls urls={urls} selectedImage={selectedImage} onClickImage={(url: any) => setSelectedImage(url)} />
+      <img src={selectedImage} className="hero-image" />
+      <ImageThumbnail
+        urls={urls}
+        selectedImage={selectedImage}
+        onClickImage={(url: any) => setSelectedImage(url)}
+      />
     </div>
   );
 }
