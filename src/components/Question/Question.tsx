@@ -16,8 +16,8 @@ export function Question(props: QuestionProps) {
   const setIsAnswered = props.setIsAnswered;
   const [chosenAnswer, setChosenAnswer] = useState<Answer>();
   return (
-    <div>
-      {question}
+    <div className = "question-component">
+      <p className = "question">{question}</p>
       <ol>
         {answers.map((answer) => (
           <li
@@ -37,7 +37,7 @@ export function Question(props: QuestionProps) {
                 : chosenAnswer?.text === answer.text
                 ? "wrong-answer"
                 : ""
-            }`}
+            } answer`}
           >
             {answer.text}
           </li>
