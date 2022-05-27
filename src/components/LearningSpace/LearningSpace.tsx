@@ -8,11 +8,16 @@ export function LearningSpace() {
   const [isAnswered, setIsAnswered] = useState(false);
 
   return (
-    <>
-      <h1>Welcome to a Learning Space!</h1>
-      <h2>{learningPageData[currentSection].title}</h2>
-      <img src={learningPageData[currentSection].content.imageUrl} />
-      <p>{learningPageData[currentSection].content.text}</p>
+    <div className="LearningSpace">
+      <h1 className="page-title">Welcome to a Learning Space!</h1>
+      <h2 className="section-title">
+        {learningPageData[currentSection].title}
+      </h2>
+      <img
+        className="image"
+        src={learningPageData[currentSection].content.imageUrl}
+      />
+      <p className="text">{learningPageData[currentSection].content.text}</p>
       <Question
         isAnswered={isAnswered}
         setIsAnswered={setIsAnswered}
@@ -27,6 +32,6 @@ export function LearningSpace() {
         setCurrentSection={setCurrentSection}
         lastPageIndex={learningPageData.length - 1}
       />
-    </>
+    </div>
   );
 }
