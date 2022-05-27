@@ -1,6 +1,29 @@
+@mixin border {
+  border-color: #d04a36;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 20px;
+}
 .correct-answer {
   background-color: lime;
 }
 .wrong-answer {
   background-color: red;
+}
+.question-component {
+  @include border;
+  width:80vw;
+  display: block;
+  margin:0 auto;
+  .question{
+    margin-left: 5vw;
+  }
+  .answer{
+   margin: 3px;
+   padding: 5px;
+   width: 50vw;
+    @include border;
+    text-align: center;
+    list-style: none;
+  }
 }
