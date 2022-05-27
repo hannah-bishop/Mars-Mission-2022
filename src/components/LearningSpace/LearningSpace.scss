@@ -1,3 +1,9 @@
+@mixin border {
+  border-color: #d04a36;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 10%;
+}
 .LearningSpace {
   background-color: #1c3148;
   color: white;
@@ -21,9 +27,12 @@
   .image {
     width: 250px;
     margin: 0 auto;
+    display: block;
+    @include border();
   }
 
   .text {
     font-size: 16px;
+    @include border();
   }
 }
