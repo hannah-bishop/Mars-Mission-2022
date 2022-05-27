@@ -1,0 +1,28 @@
+.image-mars-holiday {
+  height: auto;
+  width: 40%;
+  align-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 50vw;
+  margin: 0 auto;
+  border-radius: 8%;
+  padding: 0px;
+  label {
+    text-align: left;
+    margin: 10px 0 10px 0;
+    color: #d04836;
+  }
+}
+
+h2 {
+  color: #d04836;
+  text-align: center;
+  margin-bottom: 0px;
+}
