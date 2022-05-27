@@ -9,7 +9,7 @@ export function LearningSpace() {
   const [isAnswered, setIsAnswered] = useState(false);
 
   return (
-    <div className="LearningSpace">
+    <div className="learning-space">
       <h1 className="page-title title">Welcome to the Learning Space!</h1>
       <h2 className="section-title title">
         {learningPageData[currentSection].title}
