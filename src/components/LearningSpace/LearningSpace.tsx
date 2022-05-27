@@ -2,6 +2,7 @@ import { Question } from "../Question/Question";
 import { learningPageData } from "../../data/data";
 import { useState } from "react";
 import { PreviousAndNextButtons } from "../PreviousAndNextButtons/PreviousAndNextButtons";
+import "./LearningSpace.scss";
 
 export function LearningSpace() {
   const [currentSection, setCurrentSection] = useState(0);
@@ -9,8 +10,8 @@ export function LearningSpace() {
 
   return (
     <div className="LearningSpace">
-      <h1 className="page-title">Welcome to a Learning Space!</h1>
-      <h2 className="section-title">
+      <h1 className="page-title title">Welcome to the Learning Space!</h1>
+      <h2 className="section-title title">
         {learningPageData[currentSection].title}
       </h2>
       <img
