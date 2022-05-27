@@ -30,11 +30,6 @@ export function ImageViewer() {
   return (
     <div className="image-viewer">
       <div className="header">Mars Perseverance Rover Images</div>
-      {/* <img src={selectedImage} className="hero-image" /> */}
-      {/* <ImageThumbnail
-        urls={urls}
-        selectedImage={selectedImage}
-        onClickImage={(url: string) => setSelectedImage(url)}/> */}
       <Carousel>
         {urls.map((url: any) => {
           return (
