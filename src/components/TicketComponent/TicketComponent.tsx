@@ -27,9 +27,9 @@ export function TicketComponent() {
           Date:
           <input type="text" />
         </label>
+        <button type="submit">Submit</button>
       </form>
+      <h2> Mars Trip Preferences </h2>
     </div>
   );
 }
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(<TicketComponent />);
