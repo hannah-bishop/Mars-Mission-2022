@@ -14,5 +14,28 @@
 .header {
   color: #d04a36;
   font-family: sans-serif;
-  font-size: 3vw;
+  font-size: 9vw;
+  margin-top: 40px;
+}
+div.carousel.carousel-slider {
+  border-radius: 2%;
+  margin: 1% auto;
+}
+body {
+  height: 100%;
+  background-color: #1c3148;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-wrapper {
+    max-width: 100%;
+  }
+}
+.control-dots {
+  position: absolute;
+  z-index: -1;
+}
+
+div.carousel-root {
+  padding-top: 50px;
 }
