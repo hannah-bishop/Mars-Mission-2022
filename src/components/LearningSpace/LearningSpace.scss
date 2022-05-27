@@ -1,0 +1,35 @@
+.learning-space {
+  background-color: #1c3148;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+
+  .title {
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0;
+  }
+
+  .page-title {
+    font-size: 24px;
+    padding-top: 0;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .image {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .text {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
