@@ -5,7 +5,7 @@ import "./TicketComponent.scss";
 export function TicketComponent() {
   return (
     <div>
-      //{" "}
+      {" "}
       <img
         className="image-mars-holiday"
         src="https://images-ext-2.discordapp.net/external/X8VyhfWYjxx4TkSvBCl4zPxmZ8JEw_H8WyzsaaTLRLg/https/www.solarsystemscope.com/spacepedia/images/handbook/renders/mars.png"
